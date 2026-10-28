@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle2, Shield, Clock, HelpCircle } from 'lucide-react';
+import { ChairImage } from '../components/ChairImage';
 
 interface ContactPageProps {
   onOpenPrivacy: () => void;
@@ -244,6 +245,25 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenPrivacy }) => {
                     <span className="text-sm text-white">Nexlivo Manufacturing & Design Hub [Location Placeholder]</span>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Facility & Design Studio Preview Card */}
+            <div className="rounded-3xl overflow-hidden border border-slate-200/80 shadow-xs bg-white">
+              <div className="aspect-[16/9] relative overflow-hidden bg-slate-100">
+                <ChairImage
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80"
+                  alt="Nexlivo Design & Manufacturing Hub"
+                  category="Design & Studio Hub"
+                  title="Nexlivo Collaborative Workspace"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4 bg-white">
+                <h4 className="text-xs font-bold text-[#103D2E]">Commercial Project Consultations</h4>
+                <p className="text-[11px] text-slate-500 mt-0.5">
+                  Institutional samples, structural specifications, and finish swatches available upon inquiry.
+                </p>
               </div>
             </div>
 

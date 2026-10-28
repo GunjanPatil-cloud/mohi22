@@ -35,7 +35,7 @@ export const PROCESS_STAGES: ProcessStage[] = [
     subtitle: 'Rigorous multi-point validation before leaving our manufacturing line',
     description:
       'Every production batch undergoes systematic physical inspection. We assess frame geometry, joint resistance, surface finish uniformity, and load stability to ensure dependable everyday reliability.',
-    image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80',
     keyPractices: [
       'Geometric squareness and frame alignment checks',
       'Multi-cycle opening and closing mechanical verification',

@@ -106,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-white p-3 aspect-[4/3] sm:aspect-[16/10] lg:aspect-square flex items-center justify-center group">
                 <ChairImage
-                  src="https://images.unsplash.com/photo-1580481077197-09f193cb9eb9?auto=format&fit=crop&w=1200&q=80"
+                  src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=1200&q=80"
                   alt="Modern Nexlivo folding chair on clean light background"
                   className="w-full h-full object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-500"
                   category="Signature Collection"
@@ -294,17 +294,30 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'Material Selection & Sourcing', desc: 'Tubular metal, beechwood, and non-toxic powder coats.' },
-              { step: '02', title: 'Chair Assembly & Production', desc: 'Precision jig bending, robotic welding, and hinge alignment.' },
-              { step: '03', title: 'Quality Inspection', desc: 'Fatigue cycle checks, balance tests, and finish audits.' },
-              { step: '04', title: 'Packaging & Delivery', desc: 'High-density flat-pack protection engineered for clean logistics.' }
+              { step: '01', title: 'Material Selection & Sourcing', desc: 'Tubular metal, beechwood, and non-toxic powder coats.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80' },
+              { step: '02', title: 'Chair Assembly & Production', desc: 'Precision jig bending, robotic welding, and hinge alignment.', image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80' },
+              { step: '03', title: 'Quality Inspection', desc: 'Fatigue cycle checks, balance tests, and finish audits.', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80' },
+              { step: '04', title: 'Packaging & Delivery', desc: 'High-density flat-pack protection engineered for clean logistics.', image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80' }
             ].map((stage) => (
-              <div key={stage.step} className="p-5 rounded-2xl bg-[#F5F7F4] border border-slate-100 space-y-2">
-                <span className="font-mono text-xs font-bold text-[#21885B] block">
-                  STAGE {stage.step}
-                </span>
-                <h4 className="text-sm font-bold text-[#103D2E]">{stage.title}</h4>
-                <p className="text-xs text-slate-500 leading-relaxed">{stage.desc}</p>
+              <div key={stage.step} className="rounded-2xl bg-[#F5F7F4] border border-slate-100 overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col group">
+                <div className="aspect-[16/10] overflow-hidden bg-slate-200 relative">
+                  <ChairImage
+                    src={stage.image}
+                    alt={stage.title}
+                    category={`Stage ${stage.step}`}
+                    title={stage.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-[#103D2E]/85 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-mono font-bold text-[#B5F45A]">
+                    STAGE {stage.step}
+                  </div>
+                </div>
+                <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="text-sm font-bold text-[#103D2E] group-hover:text-[#21885B] transition-colors">{stage.title}</h4>
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">{stage.desc}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

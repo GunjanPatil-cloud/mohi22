@@ -25,7 +25,7 @@ export const CHAIRS_DATA: ChairProduct[] = [
     tagline: 'Enhanced posture support for longer gatherings',
     description:
       'Designed with contoured seat cushioning and a curved back rest to provide prolonged sitting comfort without sacrificing quick foldability or clean aesthetics.',
-    image: 'https://images.unsplash.com/photo-1580481077197-09f193cb9eb9?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=1000&q=80',
     features: [
       'Ergonomically contoured seat and lumbar curve',
       'Padded fabric seating with breathable core',

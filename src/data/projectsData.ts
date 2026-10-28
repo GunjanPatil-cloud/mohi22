@@ -222,7 +222,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: 'ESG Integration & Impact Measurement',
     shortDesc:
       'Structured environmental, social, and governance matrix linking internal benchmarks with verified accountability.',
-    image: 'https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=80',
     executiveSummary:
       'Nexlivo integrates ESG principles directly into manufacturing decisions, vendor selection, and governance reporting. We reject vague greenwashing in favor of verifiable data points and clearly designated proposed milestones.',
     sections: [

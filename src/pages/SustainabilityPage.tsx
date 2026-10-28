@@ -25,21 +25,35 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onOpenEn
     <div className="space-y-16 pb-20 pt-8">
       {/* Header */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#21885B] block mb-2">
-            Environmental & Social Stewardship
-          </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#103D2E] tracking-tight leading-tight">
-            Sustainability at Nexlivo
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-            Our framework for responsible furniture manufacturing: prioritizing real material efficiency, zero-waste packaging, and honest, verified milestones over unsubstantiated marketing claims.
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div className="lg:col-span-7 space-y-4">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#21885B] block mb-2">
+              Environmental & Social Stewardship
+            </span>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#103D2E] tracking-tight leading-tight">
+              Sustainability at Nexlivo
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+              Our framework for responsible furniture manufacturing: prioritizing real material efficiency, zero-waste packaging, and honest, verified milestones over unsubstantiated marketing claims.
+            </p>
 
-          <div className="mt-4 p-4 bg-[#21885B]/10 rounded-xl border border-[#21885B]/20 flex items-start gap-3">
-            <AlertCircle className="w-5 h-5 text-[#21885B] shrink-0 mt-0.5" />
-            <div className="text-xs text-slate-700 leading-relaxed">
-              <strong className="text-[#103D2E]">Transparency Commitment:</strong> All sustainability targets, material ratios, and reduction benchmarks are clearly designated as <em>proposed</em> until independently audited and verified by accredited third-party evaluators.
+            <div className="mt-4 p-4 bg-[#21885B]/10 rounded-xl border border-[#21885B]/20 flex items-start gap-3">
+              <AlertCircle className="w-5 h-5 text-[#21885B] shrink-0 mt-0.5" />
+              <div className="text-xs text-slate-700 leading-relaxed">
+                <strong className="text-[#103D2E]">Transparency Commitment:</strong> All sustainability targets, material ratios, and reduction benchmarks are clearly designated as <em>proposed</em> until independently audited and verified by accredited third-party evaluators.
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-[#E9EFEA]">
+              <ChairImage
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=80"
+                alt="Sustainable furniture manufacturing and recycled material stewardship"
+                category="Eco-Manufacturing"
+                title="Responsible Material Stewardship"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
