@@ -1,0 +1,6 @@
+{
+  "name": "Nexlivo - Smart Seating. Lasting Comfort.",
+  "description": "Modern folding-chair manufacturing startup providing functional, space-saving, and responsibly made seating solutions for everyday spaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
